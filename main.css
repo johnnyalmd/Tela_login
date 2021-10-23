@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;/* iremos usar estas unidades de medidas para ocupar 100% da largura visivel da pagina* a mesma coisa com a altura*/
+    height: 100vh;
+    background-image:url(/assets/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.form-box {
+    width: 300px;
+    background: #fff;
+    font-family: Lato;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 10px solid #d9efde;
+    box-shadow: 7px 2px 4px 0px rgba(0,0,0,0.5);
+    height: 400px;
+}
+
+.form-input{
+    border: none;
+    background: #eee;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 23px
+}
+
+
+.form-box .form-btn {
+    border: none;
+    background: #d9efde;;
+    width:100%;
+    height: 50px;
+    font-size: large;
+    color: rgb(7, 7, 7);
+    margin-bottom: 40px
+}
+#cadastro {
+    position: relative;
+    bottom: 25px;
+}
+
+@media screen and (max-width:340px){
+    .form-box {
+        width: 100vw;
+        height: 100vh
+    }
+}
